@@ -1,149 +1,349 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
-h2{
+
+h2 {
+  font-size: 2.8rem;
   color: white;
-  font-family: Avalon,sans-serif;
-}
-.black-nav {
-    height: 5rem;
-    background-color: black;
+  font-family: sans-serif;
 }
 
 .white-nav {
-    height: 5rem;
-    background-color: white;
+  height: 5rem;
+  background-color: white;
 }
 
 .yellow-nav {
-    height: 5rem;
-    background-color: yellow;
+  display: block;
+  height: 5rem;
+  line-height: 30px;
+  background: #fd3;
+  font-size: 13px;
 }
+
+.yellow-nav p {
+  color: black;
+  margin-left: 10px;
+}
+
 ul {
   list-style-type: none;
 }
 
-li{
-
-margin-left: 5px;
-font: 1.3em sans-serif;
+li {
+  margin-left: 5px;
+  font: 1.3em sans-serif;
   color: rgb(182, 173, 173);
-
 }
 
-.flex{
+.flex {
   display: flex;
-  justify-content: flex-start
+  justify-content: flex-start;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 40px 0px;
-  grid-template-areas:
-    "left-post left-post left-post left-post"
-    "topright topright topright topright"
-    "bottomright bottomright bottomright bottomright";
+  gap: 40px 0;
+  grid-template-areas: "left-post left-post left-post left-post" "topright topright topright topright" "bottomright bottomright bottomright bottomright";
 }
 
-.left-post { grid-area: left-post;
-  height: 10rem;
-  background-image: linear-gradient(to left, rgba(235, 109, 109, 0.959), rgba(243, 18, 29, 0.849)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/02/borisbrain-796x417.png);
-  background-repeat:no-repeat;
+.left-post {
+  grid-area: left-post;
+  position: relative;
+  height: 15rem;
+  background-image: linear-gradient(to bottom, rgba(228, 89, 89, 0.959), rgb(41, 34, 34)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/02/borisbrain-796x417.png);
+  background-repeat: no-repeat;
   background-position: center center;
 }
 
-.topright { grid-area: topright;
-  background-image: linear-gradient(to left, rgba(126, 119, 119, 0.753), rgba(75, 72, 72, 0.692)), url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Untitled-design-2021-01-26T112752.972-796x417.png);
-  background-repeat:no-repeat;
+.topright {
+  grid-area: topright;
+  background-image: linear-gradient(to bottom, rgba(105, 101, 101, 0.65), rgba(22, 22, 22, 0.911)), url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Untitled-design-2021-01-26T112752.972-796x417.png);
+  background-repeat: no-repeat;
   background-position: center center;
-  height: 10rem;
-  background-color: rgb(141, 27, 27) 
-  
-}
-
-.bottomright { grid-area: bottomright;
-  height: 10rem;
-
-  background-image: linear-gradient(to left, rgba(126, 119, 119, 0.753), rgba(75, 72, 72, 0.692)), url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Gemini2-duplicates-monitor-alert-e1611566958933-796x420.png
-  );
-  background-repeat:no-repeat;
-  background-position: center center;
-
+  height: 15rem;
+  background-color: rgb(141, 27, 27);
+  position: relative;
 }
 
 .bottomright {
-    grid-area: bottomright;
-    background-color: darkgreen;
+  grid-area: bottomright;
+  height: 15rem;
+  background-image:
+    linear-gradient(to bottom, rgba(105, 101, 101, 0.678), rgba(22, 22, 22, 0.911)),
+    url(
+      https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Gemini2-duplicates-monitor-alert-e1611566958933-796x420.png
+);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
 }
-.cover-title .cover-title-two{
+
+.content {
+  position: absolute;
+  bottom: 0;
+}
+
+.cover-title .cover-title-two {
   line-height: 1.1;
   font-size: 2rem;
   font-weight: 700;
 }
 
-@media only screen and (min-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
+.nav-logo-black {
+  background-color: black;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.nav-img {
+  display: block;
+  height: 50px;
+  position: relative;
+  width: 95px;
+  z-index: 999;
+}
+
+.left-nav {
+  display: none;
+}
+
+.right-nav {
+  display: none;
+}
+
+.white-nav-list {
+  display: none;
+}
+
+.right-icon {
+  text-align: center;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: inline;
+  margin-left: 10px;
+  border-left: 1px solid rgb(80, 78, 78);
+  height: 48px;
+  opacity: 0.55;
+  padding: 16px;
+}
+
+.hideinlarge {
+  color: orange;
+}
+
+@media (min-width: 801px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas: "left-post left-post topright" "left-post left-post bottomright";
   }
-  @media only screen and   (min-width:769px) {
-    body {
-      background-color: blue;
-    }
+
+  .left-post {
+    grid-area: left-post;
+    height: 45rem;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(228, 89, 89, 0.959), rgb(41, 34, 34)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/02/borisbrain-796x417.png);
   }
-  @media only screen and   (min-width:1024px) {
-    body {
-      background-color: blue;
-    }
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 15px 0px;
-      grid-template-areas:
-        "left-post left-post topright"
-        "left-post left-post bottomright";
-    }
-    
-    .left-post { grid-area: left-post; 
-      height: 38rem;
-      background-image: linear-gradient(to left, rgba(235, 109, 109, 0.959), rgba(243, 18, 29, 0.849)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/02/borisbrain-796x417.png);
-    }
-    
-    .topright { grid-area: topright;
-      background-color: rgb(96, 235, 235);
-      height: 18rem; }
-    
-    .bottomright { grid-area: bottomright;
-      height: 18rem; }
-    
+
+  .topright {
+    grid-area: topright;
+    position: relative;
+    background-color: rgb(96, 235, 235);
+    height: 22rem;
+  }
+
+  .bottomright {
+    grid-area: bottomright;
+    position: relative;
+    height: 22rem;
+  }
+
+  .cover-title {
+    font-family: sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  .content {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .nav-logo-black {
+    width: 105px;
+    height: 80px;
+  }
+
+  .nav-img {
+    margin-top: 30px;
+    display: block;
+    height: 20px;
+    position: relative;
+    width: 95px;
+    z-index: 999;
+  }
+
+  .black-nav {
+    height: 3rem;
+    background-color: black;
+  }
+
+  .left-nav {
+    margin-left: 10rem;
+    margin-top: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .licontainer {
+    background-color: black;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .hideinlarge {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas: "left-post left-post topright" "left-post left-post bottomright";
+  }
+
+  .left-post {
+    grid-area: left-post;
+    height: 45rem;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(228, 89, 89, 0.959), rgb(41, 34, 34)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/02/borisbrain-796x417.png);
+  }
+
+  .topright {
+    grid-area: topright;
+    position: relative;
+    background-color: rgb(96, 235, 235);
+    height: 22rem;
+  }
+
+  .bottomright {
+    grid-area: bottomright;
+    position: relative;
+    height: 22rem;
+  }
 
   .cover-logo {
+    margin-top: 10px;
+    margin-left: 10px;
     background: transparent url(./img/download.svg) no-repeat;
     background-size: contain;
     left: 24px;
+
     /* max-width: 50%; */
     height: 100%;
     max-height: 112px;
     line-height: 1;
     top: 24px;
-    pointer-events: none;
     text-align: right;
   }
-  .cover-title{
-    margin-top: 10rem;
-      font-size: 6rem;
-      font-weight: 700;
+
+  .cover-title {
+    font-family: sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
   }
+
+  .content {
+    position: absolute;
+    bottom: 0;
   }
 
+  .nav-img {
+    display: none;
+  }
 
+  .black-nav {
+    height: 3rem;
+    background-color: black;
+  }
 
- 
+  .left-nav {
+    margin-left: 5px;
+    margin-top: 6px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .right-nav {
+    margin-top: 6px;
+    color: white;
+    display: flex;
+  }
+
+  .right-nav-container {
+    right: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .right-nav li {
+    margin-left: 10px;
+  }
+
+  .yellow-nav {
+    display: block;
+    height: 3rem;
+  }
+
+  .white-nav-list {
+    text-transform: uppercase;
+    display: flex;
+  }
+
+  .white-nav-list li {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .licontainer {
+    background-color: black;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .nav-logo-black {
+    display: none;
+  }
+
+  .hideinlarge {
+    display: none;
+  }
+
+  .icons {
+    position: relative;
+    top: -24px;
+  }
+}
