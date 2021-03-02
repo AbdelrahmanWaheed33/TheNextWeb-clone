@@ -1,149 +1,112 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-html {
-    font-size: 10px;
-}
-h2{
-  color: white;
-  font-family: Avalon,sans-serif;
-}
-.black-nav {
-    height: 5rem;
-    background-color: black;
-}
-
-.white-nav {
-    height: 5rem;
-    background-color: white;
-}
-
-.yellow-nav {
-    height: 5rem;
-    background-color: yellow;
-}
+ol,
 ul {
-  list-style-type: none;
+  list-style: none;
 }
 
-li{
-
-margin-left: 5px;
-font: 1.3em sans-serif;
-  color: rgb(182, 173, 173);
-
+a {
+  color: white;
+  text-decoration: none;
 }
 
-.flex{
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
   display: flex;
-  justify-content: flex-start
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 40px 0px;
-  grid-template-areas:
-    "left-post left-post left-post left-post"
-    "topright topright topright topright"
-    "bottomright bottomright bottomright bottomright";
-}
-
-.left-post { grid-area: left-post;
-  height: 10rem;
-  background-image: linear-gradient(to left, rgba(235, 109, 109, 0.959), rgba(243, 18, 29, 0.849)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/02/borisbrain-796x417.png);
-  background-repeat:no-repeat;
-  background-position: center center;
-}
-
-.topright { grid-area: topright;
-  background-image: linear-gradient(to left, rgba(126, 119, 119, 0.753), rgba(75, 72, 72, 0.692)), url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Untitled-design-2021-01-26T112752.972-796x417.png);
-  background-repeat:no-repeat;
-  background-position: center center;
-  height: 10rem;
-  background-color: rgb(141, 27, 27) 
-  
-}
-
-.bottomright { grid-area: bottomright;
-  height: 10rem;
-
-  background-image: linear-gradient(to left, rgba(126, 119, 119, 0.753), rgba(75, 72, 72, 0.692)), url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Gemini2-duplicates-monitor-alert-e1611566958933-796x420.png
-  );
-  background-repeat:no-repeat;
-  background-position: center center;
+  flex-direction: column;
 
 }
 
-.bottomright {
-    grid-area: bottomright;
-    background-color: darkgreen;
-}
-.cover-title .cover-title-two{
-  line-height: 1.1;
-  font-size: 2rem;
-  font-weight: 700;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #131313;
 }
 
-@media only screen and (min-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  }
-  @media only screen and   (min-width:769px) {
-    body {
-      background-color: blue;
-    }
-  }
-  @media only screen and   (min-width:1024px) {
-    body {
-      background-color: blue;
-    }
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 15px 0px;
-      grid-template-areas:
-        "left-post left-post topright"
-        "left-post left-post bottomright";
-    }
-    
-    .left-post { grid-area: left-post; 
-      height: 38rem;
-      background-image: linear-gradient(to left, rgba(235, 109, 109, 0.959), rgba(243, 18, 29, 0.849)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/02/borisbrain-796x417.png);
-    }
-    
-    .topright { grid-area: topright;
-      background-color: rgb(96, 235, 235);
-      height: 18rem; }
-    
-    .bottomright { grid-area: bottomright;
-      height: 18rem; }
-    
+.wrapper2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
 
-  .cover-logo {
-    background: transparent url(./img/download.svg) no-repeat;
-    background-size: contain;
-    left: 24px;
-    /* max-width: 50%; */
-    height: 100%;
-    max-height: 112px;
-    line-height: 1;
-    top: 24px;
-    pointer-events: none;
-    text-align: right;
-  }
-  .cover-title{
-    margin-top: 10rem;
-      font-size: 6rem;
-      font-weight: 700;
-  }
+.wrapper2 > span {
+  margin: 2px;
+}
+
+.social-links-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-links-footer > li {
+  background: #333;
+  border-radius: 50%;
+  height: 20px;
+  padding: 12px;
+  text-align: center;
+  width: 20px;
+  margin: 0 5px;
+}
+
+.social-links-footer > li:hover {
+  background-color: black;
+}
+
+.menu-links-footer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.menu-links-footer > li {
+  padding: 10px;
+}
+
+.menu-links-footer-style {
+  font-weight: bold;
+  color: white;
+}
+
+.menu-links-footer-style:hover {
+  color: grey;
+}
+
+.company-logo1{
+  width: 40px;
+  height: 40px;
+}
+
+.company-logo2{
+  width: 60px;
+  height: 60px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 320px) {
+  .social-links-footer {
+    flex-flow: row wrap;
   }
 
+  .menu-links-footer {
+    flex-flow: row wrap;
+  }
 
-
- 
+  .wrapper2 {
+    flex-flow: row wrap;
+  }
+}
