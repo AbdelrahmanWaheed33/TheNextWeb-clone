@@ -13,10 +13,10 @@ It second project in Microverse
 - HTML
 - CSS3
 
-<!-- ## Live Demo
+## Live Demo
 
-[Live Demo Link](https://abdelrahmanwaheed33.github.io/The_New_York_Times_clone/)
- -->
+[Live Demo Link](https://abdelrahmanwaheed33.github.io/TheNextWeb-clone/)
+
 
 
 
