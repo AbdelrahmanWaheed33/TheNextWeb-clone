@@ -144,8 +144,19 @@ li {
 .hideinlarge {
   color: orange;
 }
-
+.investment-story-container {
+  display: block;
+ justify-content: center;
+ 
+}
+.investment-story-block {
+  
+  margin: 0 10px;
+  width: 530px;
+  height: 200px;
+}
 @media (min-width: 801px) {
+
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -223,6 +234,33 @@ li {
   .hideinlarge {
     display: none;
   }
+  .blockfour{
+    display: none;
+  }
+  .investment-story-container {
+    display: flex;
+   justify-content: center;
+   
+  }
+  .investment-story-block {
+  
+  margin: 0 10px;
+  width: 300px;
+  height: 200px;
+}
+.latest-funding-header-container {
+  margin-left: 235px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latest-funding-header > a {
+  color: #f42;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 25px;
+}
 }
 
 @media (min-width: 1024px) {
@@ -350,25 +388,19 @@ margin-right: 10px;
     position: relative;
     top: -24px;
   }
+  .investment-story-container {
+    display: flex;
+   justify-content: center;
+   
+  }
+  .investment-story-block {
+  
+  margin: 0 10px;
+  width: 300px;
+  height: 200px;
 }
-/* another css */
-ol,
-ul {
-  list-style: none;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-/* LATEST FUNDING */
-
-.latest-funding {
-  width: 100%;
-}
-
 .latest-funding-header-container {
+  margin-left: 235px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -380,6 +412,33 @@ a {
   font-weight: bolder;
   font-size: 25px;
 }
+.blockfour{
+  display: block;
+}
+
+}
+/* another css */
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+/* .liblock{
+  display: block;
+} */
+/* LATEST FUNDING */
+
+.latest-funding {
+  margin-top: 52px;
+  width: 100%;
+}
+
+
 
 .fa-chevron-right {
   color: #f42;
@@ -404,9 +463,11 @@ a {
   border-left: 1px solid #f42;
 }
 
-.investment-story-container {
+/* .investment-story-container {
   display: flex;
-}
+ justify-content: center;
+
+} */
 
 .investment-story-header {
   display: block;
@@ -461,12 +522,6 @@ a {
   padding-bottom: 15px;
 }
 
-.investment-story-block {
-  flex: 0 1 25%;
-  margin: 0 10px;
-  width: 300px;
-  height: 200px;
-}
 
 .microverse-logo {
   width: 60px;
@@ -558,7 +613,7 @@ a {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 560px) {
+/* @media screen and (max-width: 560px) {
   .social-links-footer {
     flex-flow: row wrap;
   }
@@ -575,4 +630,4 @@ a {
     flex-flow: column;
   }  
 }
-
+ */
