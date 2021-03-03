@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 html {
@@ -311,7 +313,9 @@ li {
   .right-nav li {
     margin-left: 10px;
   }
-
+.right-nav{
+margin-right: 10px;
+}
   .yellow-nav {
     display: block;
     height: 3rem;
@@ -347,3 +351,228 @@ li {
     top: -24px;
   }
 }
+/* another css */
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* LATEST FUNDING */
+
+.latest-funding {
+  width: 100%;
+}
+
+.latest-funding-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latest-funding-header > a {
+  color: #f42;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.fa-chevron-right {
+  color: #f42;
+  text-decoration: none;
+}
+
+.latest-funding-right-menu {
+  display: flex;
+}
+
+.latest-funding-right-menu > li > a {
+  color: #f42;
+  text-decoration: none;
+}
+
+.latest-funding-right-menu > li {
+  padding: 0 15px;
+}
+
+#updates-by-email-middle-link {
+  border-right: 1px solid #f42;
+  border-left: 1px solid #f42;
+}
+
+.investment-story-container {
+  display: flex;
+}
+
+.investment-story-header {
+  display: block;
+  position: relative;
+}
+
+.investment-story-header {
+  text-align: center;
+  font-size:  x-large;
+  font-weight: bolder;
+}
+
+.investment-story-title {
+  background-color: #f42;
+  padding-right: 45px;
+  height: 35px;
+  padding-top: 5px;
+  font-size: 21px;
+}
+
+.investment-story-valuation {
+  background-color: beige;
+  padding-right: 60px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.investment-story-valuation > p {
+  color: black;
+}
+
+.investment-story-tags {
+  height: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0 15px;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.investment-story-tags > a {
+  color: #131313;
+}
+
+.investment-story-tags > a > i {
+  margin: 4px;
+}
+
+.investment-story-news {
+  border-top: 1px solid rgba(255,68,34,.25);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.investment-story-block {
+  flex: 0 1 25%;
+  margin: 0 10px;
+  width: 300px;
+  height: 200px;
+}
+
+.microverse-logo {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+}
+
+/* FOOTER */
+
+.footer {
+
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #131313;
+}
+
+.wrapper2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.wrapper2 > span {
+  margin: 2px;
+}
+
+.social-links-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-links-footer > li {
+  background: #333;
+  border-radius: 50%;
+  height: 20px;
+  padding: 12px;
+  text-align: center;
+  width: 20px;
+  margin: 0 5px;
+}
+
+.social-links-footer > li:hover {
+  background-color: black;
+}
+
+.menu-links-footer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.menu-links-footer > li {
+  padding: 10px;
+}
+
+.menu-links-footer-style {
+  font-weight: bold;
+  color: white;
+}
+
+.menu-links-footer-style:hover {
+  color: grey;
+}
+
+.company-logo1{
+  width: 40px;
+  height: 40px;
+}
+
+.company-logo2{
+  width: 60px;
+  height: 60px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 560px) {
+  .social-links-footer {
+    flex-flow: row wrap;
+  }
+
+  .menu-links-footer {
+    flex-flow: row wrap;
+  }
+
+  .wrapper2 {
+    flex-flow: row wrap;
+  }
+
+  .investment-story-container{
+    flex-flow: column;
+  }  
+}
+
