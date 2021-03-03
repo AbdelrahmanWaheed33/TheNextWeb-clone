@@ -16,6 +16,121 @@ a {
   text-decoration: none;
 }
 
+/* LATEST FUNDING */
+
+.latest-funding {
+  width: 100%;
+}
+
+.latest-funding-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latest-funding-header > a {
+  color: #f42;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.fa-chevron-right {
+  color: #f42;
+  text-decoration: none;
+}
+
+.latest-funding-right-menu {
+  display: flex;
+}
+
+.latest-funding-right-menu > li > a {
+  color: #f42;
+  text-decoration: none;
+}
+
+.latest-funding-right-menu > li {
+  padding: 0 15px;
+}
+
+#updates-by-email-middle-link {
+  border-right: 1px solid #f42;
+  border-left: 1px solid #f42;
+}
+
+.investment-story-container {
+  display: flex;
+}
+
+.investment-story-header {
+  display: block;
+  position: relative;
+}
+
+.investment-story-header {
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.investment-story-title {
+  background-color: #f42;
+  padding-right: 45px;
+  height: 35px;
+  padding-top: 5px;
+  font-size: 21px;
+}
+
+.investment-story-valuation {
+  background-color: beige;
+  padding-right: 60px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.investment-story-valuation > p {
+  color: black;
+}
+
+.investment-story-tags {
+  height: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0 15px;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.investment-story-tags > a {
+  color: #131313;
+}
+
+.investment-story-tags > a > i {
+  margin: 4px;
+}
+
+.investment-story-news {
+  border-top: 1px solid rgba(255,68,34,.25);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.investment-story-block {
+  flex: 0 1 25%;
+  margin: 0 10px;
+  width: 300px;
+  height: 200px;
+}
+
+.microverse-logo {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+}
+
 /* FOOTER */
 
 .footer {
@@ -97,7 +212,7 @@ a {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 560px) {
   .social-links-footer {
     flex-flow: row wrap;
   }
@@ -109,4 +224,9 @@ a {
   .wrapper2 {
     flex-flow: row wrap;
   }
+
+  .investment-story-container{
+    flex-flow: column;
+  }  
 }
+
