@@ -478,7 +478,7 @@ a {
   display: flex;
 }
 
-.investment-story-tags > a {
+.investment-story-tags > p {
   color: #131313;
 }
 
@@ -540,6 +540,7 @@ a {
   border-top: 1px solid rgba(255, 68, 34, 0.25);
   padding-top: 15px;
   padding-bottom: 15px;
+  color: black;
 }
 
 .microverse-logo {
