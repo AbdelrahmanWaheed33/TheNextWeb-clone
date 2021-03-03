@@ -249,7 +249,7 @@ li {
   height: 200px;
 }
 .latest-funding-header-container {
-  margin-left: 235px;
+  /* margin-left: 235px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -261,9 +261,20 @@ li {
   font-weight: bolder;
   font-size: 25px;
 }
+.latest-funding-right-menu {
+  margin-right: 221px;
+
+}
+.containerwidth{
+  text-align:center;
+}
+/* .latest-funding-header {
+
+} */
 }
 
 @media (min-width: 1024px) {
+  
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -400,7 +411,7 @@ margin-right: 10px;
   height: 200px;
 }
 .latest-funding-header-container {
-  margin-left: 235px;
+  /* margin-left: 235px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -415,7 +426,17 @@ margin-right: 10px;
 .blockfour{
   display: block;
 }
+.latest-funding-right-menu {
+  margin-right: 221px;
 
+}
+.containerwidth{
+  text-align:center;
+}
+.latest-funding-header {
+  margin-left: 233px;
+  /* background-color:yellow; */
+}
 }
 /* another css */
 
