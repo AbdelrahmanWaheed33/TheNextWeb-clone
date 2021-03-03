@@ -144,19 +144,19 @@ li {
 .hideinlarge {
   color: orange;
 }
+
 .investment-story-container {
   display: block;
- justify-content: center;
- 
+  justify-content: center;
 }
+
 .investment-story-block {
-  
   margin: 0 10px;
   width: 530px;
   height: 200px;
 }
-@media (min-width: 801px) {
 
+@media (min-width: 801px) {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -234,47 +234,50 @@ li {
   .hideinlarge {
     display: none;
   }
-  .blockfour{
+
+  .blockfour {
     display: none;
   }
+
   .investment-story-container {
     display: flex;
-   justify-content: center;
-   
+    justify-content: center;
   }
+
   .investment-story-block {
-  
-  margin: 0 10px;
-  width: 300px;
-  height: 200px;
-}
-.latest-funding-header-container {
-  /* margin-left: 235px; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    margin: 0 10px;
+    width: 300px;
+    height: 200px;
+  }
 
-.latest-funding-header > a {
-  color: #f42;
-  text-decoration: none;
-  font-weight: bolder;
-  font-size: 25px;
-}
-.latest-funding-right-menu {
-  margin-right: 221px;
+  .latest-funding-header-container {
+    /* margin-left: 235px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-}
-.containerwidth{
-  text-align:center;
-}
-/* .latest-funding-header {
+  .latest-funding-header > a {
+    color: #f42;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
+  .latest-funding-right-menu {
+    margin-right: 221px;
+  }
+
+  .containerwidth {
+    text-align: center;
+  }
+
+  /* .latest-funding-header {
 
 } */
 }
 
 @media (min-width: 1024px) {
-  
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -351,6 +354,7 @@ li {
     margin-top: 6px;
     color: white;
     display: flex;
+    margin-right: 10px;
   }
 
   .right-nav-container {
@@ -362,9 +366,7 @@ li {
   .right-nav li {
     margin-left: 10px;
   }
-.right-nav{
-margin-right: 10px;
-}
+
   .yellow-nav {
     display: block;
     height: 3rem;
@@ -399,45 +401,51 @@ margin-right: 10px;
     position: relative;
     top: -24px;
   }
+
   .investment-story-container {
     display: flex;
-   justify-content: center;
-   
+    justify-content: center;
   }
+
   .investment-story-block {
-  
-  margin: 0 10px;
-  width: 300px;
-  height: 200px;
-}
-.latest-funding-header-container {
-  /* margin-left: 235px; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    margin: 0 10px;
+    width: 300px;
+    height: 200px;
+  }
+
+  .latest-funding-header-container {
+    /* margin-left: 235px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .latest-funding-header > a {
+    color: #f42;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
+  .blockfour {
+    display: block;
+  }
+
+  .latest-funding-right-menu {
+    margin-right: 221px;
+  }
+
+  .containerwidth {
+    text-align: center;
+  }
+
+  .latest-funding-header {
+    margin-left: 233px;
+
+    /* background-color:yellow; */
+  }
 }
 
-.latest-funding-header > a {
-  color: #f42;
-  text-decoration: none;
-  font-weight: bolder;
-  font-size: 25px;
-}
-.blockfour{
-  display: block;
-}
-.latest-funding-right-menu {
-  margin-right: 221px;
-
-}
-.containerwidth{
-  text-align:center;
-}
-.latest-funding-header {
-  margin-left: 233px;
-  /* background-color:yellow; */
-}
-}
 /* another css */
 
 ol,
@@ -449,17 +457,17 @@ a {
   color: white;
   text-decoration: none;
 }
+
 /* .liblock{
   display: block;
 } */
+
 /* LATEST FUNDING */
 
 .latest-funding {
   margin-top: 52px;
   width: 100%;
 }
-
-
 
 .fa-chevron-right {
   color: #f42;
@@ -468,6 +476,10 @@ a {
 
 .latest-funding-right-menu {
   display: flex;
+}
+
+.investment-story-tags > a {
+  color: #131313;
 }
 
 .latest-funding-right-menu > li > a {
@@ -484,20 +496,11 @@ a {
   border-left: 1px solid #f42;
 }
 
-/* .investment-story-container {
-  display: flex;
- justify-content: center;
-
-} */
-
-.investment-story-header {
-  display: block;
-  position: relative;
-}
-
 .investment-story-header {
   text-align: center;
-  font-size:  x-large;
+  display: block;
+  position: relative;
+  font-size: x-large;
   font-weight: bolder;
 }
 
@@ -529,20 +532,15 @@ a {
   line-height: 1.5;
 }
 
-.investment-story-tags > a {
-  color: #131313;
-}
-
 .investment-story-tags > a > i {
   margin: 4px;
 }
 
 .investment-story-news {
-  border-top: 1px solid rgba(255,68,34,.25);
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
 
 .microverse-logo {
   width: 60px;
@@ -556,7 +554,6 @@ a {
 /* FOOTER */
 
 .footer {
-
   bottom: 0;
   width: 100%;
   color: white;
@@ -600,6 +597,10 @@ a {
   margin: 0 5px;
 }
 
+.menu-links-footer > li {
+  padding: 10px;
+}
+
 .social-links-footer > li:hover {
   background-color: black;
 }
@@ -607,10 +608,6 @@ a {
 .menu-links-footer {
   display: flex;
   margin-top: 20px;
-}
-
-.menu-links-footer > li {
-  padding: 10px;
 }
 
 .menu-links-footer-style {
@@ -622,12 +619,12 @@ a {
   color: grey;
 }
 
-.company-logo1{
+.company-logo1 {
   width: 40px;
   height: 40px;
 }
 
-.company-logo2{
+.company-logo2 {
   width: 60px;
   height: 60px;
 }
@@ -649,6 +646,6 @@ a {
 
   .investment-story-container{
     flex-flow: column;
-  }  
+  }
 }
  */
