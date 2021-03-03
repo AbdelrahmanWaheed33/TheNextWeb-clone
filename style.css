@@ -212,7 +212,7 @@ a {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 360px) {
   .social-links-footer {
     flex-flow: row wrap;
   }
@@ -230,3 +230,20 @@ a {
   }  
 }
 
+@media screen and (max-width: 780px) {
+  .social-links-footer {
+    flex-flow: row wrap;
+  }
+
+  .menu-links-footer {
+    flex-flow: row wrap;
+  }
+
+  .wrapper2 {
+    flex-flow: row wrap;
+  }
+
+  .investment-story-container{
+    flex-flow: wrap;
+  }  
+}
