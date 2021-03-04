@@ -632,7 +632,7 @@ a {
 
 /* MEDIA QUERIES */
 
- @media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .social-links-footer {
     flex-flow: row wrap;
   }
@@ -645,7 +645,7 @@ a {
     flex-flow: row wrap;
   }
 
-  .investment-story-container{
+  .investment-story-container {
     flex-flow: column;
   }
 }
