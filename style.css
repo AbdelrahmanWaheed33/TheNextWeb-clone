@@ -152,8 +152,6 @@ li {
 
 .investment-story-block {
   margin: 0 10px;
-  width: 530px;
-  height: 200px;
 }
 
 @media (min-width: 801px) {
@@ -524,12 +522,12 @@ a {
 }
 
 .investment-story-tags {
-  height: 50px;
   display: flex;
   flex-flow: column wrap;
   padding: 0 15px;
   margin: 10px 0;
   line-height: 1.5;
+  align-items: flex-start;
 }
 
 .investment-story-tags > a > i {
@@ -632,7 +630,7 @@ a {
 
 /* MEDIA QUERIES */
 
-/* @media screen and (max-width: 560px) {
+ @media screen and (max-width: 320px) {
   .social-links-footer {
     flex-flow: row wrap;
   }
