@@ -1109,3 +1109,7 @@ a {
   font-weight: bolder;
   float: right;
 }
+
+li a {
+  color: #131313;
+}
