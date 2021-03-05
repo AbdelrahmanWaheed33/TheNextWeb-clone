@@ -1110,6 +1110,6 @@ a {
   float: right;
 }
 
-li a {
+.categories-li a {
   color: #131313;
 }
